@@ -41,13 +41,19 @@
 
 		{{#options.length}}
 		<select class="userOption">
+
 			<option>{{label}}</option>
+
 			{{#options}}
+
 				<option value="{{value}}">{{label}}</option>
+
 			{{/options}}
+
 		</select>
    	 
    	 {{/options.length}}
+     
    	 	{{^options}}
    	 		<span class="fa {{icon}} icon"</span>  
         <input class="formWidth" type="{{type}}" placeholder="{{label}}" id="{{id}}" icon="{{icon}}" options="{{options}}" />
